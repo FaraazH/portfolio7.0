@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Fret</title>
+    <link rel="stylesheet" href="css/chromatic.css">
+    <link rel="icon" href="/content/logo.svg">
+</head>
+<body>
+
+
+
+    <main>
+
+        <!--TITLES-->
+        <div class="container titleContainer">
+            <h1 class="title pitchTitle">PITCH</h1>
+            <h1 class="title intervalTitle">INTERVALS</h1>
+            <h1 class="title chromaticTitle">CHROMATIC</h1>
+        </div>
+
+        <!--DESCRIPTIONS-->
+        <div class="container descriptionContainer">
+
+            <!--PITCH DESCRIPTION-->
+            <div class="description pitchDescription">
+                <p>Frequency is the number of complete wave cycles that pass a fixed point per second.</p>
+             
+                <div class="frequencyDescription">
+                    <p class="hiLoDescription freqDescription">Frequency determines the pitch of each note and is measured in <span class="bold">Hertz</span> (Hz).</p>
+                    <p class="hiLoDescription hiDescription">The <span class="bold">higher</span> the frequency, the <span class="bold">higher</span> the pitch.</p>
+                    <p class="hiLoDescription loDescription">The <span class="bold">lower</span> the frequency, the <span class="bold">lower</span> the pitch.</p>
+                </div>
+            </div>
+
+            <!--INTERVAL DESCRIPTION-->
+            <div class="description intervalDescription">
+                <p class="">An <span class="bold">interval</span> is the distance in pitch between two notes.</p>
+
+                <div class="stepDescription">
+                    <p class="halfStepDescription hfoDescription">A <span class="bold">half step</span> (semi tone) is the distance from one note to the next.</p>
+                    <p class="fullStepDescription hfoDescription">A <span class="bold">full step</span> (whole tone) is the distance between two semi tones.</p>
+                    <div class="octaveDescription hfoDescription">
+                        <p>An <span class="bold">octave</span> is the distance between one note and another double or half its frequency.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!--CHROMATIC DESCRIPTION-->
+            <div class="description chromaticDescription">
+                <p>In Western music we have <span class="bold">12</span> notes.</p>
+                <p><span class="bold">7</span> naturals <br> <span class="bold">5</span> sharps <br> <span class="bold">5</span> flats</p>
+
+                <div class="ascendDescription">
+                    <p class="shareDescription sfDescription">Sharps + flats share the same note.</p>
+                    <p class="shareDescription sDescription sfAscendDescription">Sharps <span class="bold">ascend.</span></p>
+                    <p class="shareDescription fDescription sfAscendDescription">Flats <span class="bold">descend.</span></p>
+                </div>
+            </div>
+        </div>
+ 
+        <!--NAVIGATION-->
+        <nav>
+
+            <!--NAV COLOUR-->
+            <div class="container navColourContainer">
+                <div class="navColourButton">
+                    <div class="pitchNavColour navColourCircle"></div>
+                    <p>Pitch</p>
+                </div>
+    
+                <div class="navColourButton">
+                    <div class="intervalNavColour navColourCircle"></div>
+                    <p>Interval</p>
+                </div>
+    
+                <div class="navColourButton">
+                    <div class="chromaticNavColour navColourCircle"></div>
+                    <p>Chromatic</p>
+                </div>
+            </div>
+
+            <!--NAV PLAIN-->
+            <div class="navContainer">
+                <div class="navButton pitchNav">
+                    <div class="pitchNavColour navCircle"></div>
+                    <p>Pitch</p>
+                </div>
+    
+                <div class="navButton intervalNav">
+                    <div class="intervalNavColour navCircle"></div>
+                    <p>Interval</p>
+    
+                </div>
+    
+                <div class="navButton chromaticNav">
+                    <div class="chromaticNavColour navCircle"></div>
+                    <p>Chromatic</p>
+                </div>
+            </div>
+        </nav>
+
+        <!--BUTTONS-->
+        <div class="container buttonsContainer">
+
+             <!--INTERVAL COLOUR BUTTONS-->
+             <div class="intervalColourButtons">
+                <div class="intervalColourButton halfColourButton">
+                    <div class="colourButton"><p class="intervalColourButtonText">1/2</p></div>
+                </div>
+    
+                <div class="intervalColourButton fullColourButton">
+                    <div class="colourButton"><p class="intervalColourButtonText">1</p></div>
+                </div>
+    
+            <div class="intervalColourButton octColourButton">
+                    <div class="colourButton"><p class="intervalColourButtonText">8</p></div>
+                </div>
+            </div>
+
+            <!--INTERVAL BUTTONS-->
+            <div class="intervalButtons">
+                <div class="intervalButton halfButton">
+                    <div class="button halfButtonCircle"><p class="intervalButtonText">1/2</p></div>
+                </div>
+    
+                <div class="intervalButton fullButton">
+                    <div class="button"><p class="intervalButtonText">1</p></div>
+                </div>
+    
+            <div class="intervalButton octButton">
+                    <div class="button"><p class="intervalButtonText">8</p></div>
+                </div>
+
+            </div>
+
+            <!--CHROMATIC BUTTONS COLOUR-->
+            <div class="chromaticButtonsColour">
+                <div class="chromaticButtonColour flatButtonColour">
+                    <div class="buttonColour"><p class="chromaticButtonColourText">b</p></div>
+                </div>
+
+                <div class="chromaticButtonColour naturalButtonColour">
+                    <div class="buttonColour"><p class="chromaticButtonColourText">//</p></div>
+                </div>
+
+            <div class="chromaticButtonColour sharpButtonColour">
+                    <div class="buttonColour"><p class="chromaticButtonColourText">#</p></div>
+                </div>
+            </div>
+
+            <!--CHROMATIC BUTTONS-->
+            <div class="chromaticButtons">
+                <div class="chromaticButton flatButton">
+                        <div class="button"><p class="chromaticButtonText">b</p></div>
+                </div>
+    
+                <div class="chromaticButton naturalButton">
+                    <div class="button"><p class="chromaticButtonText">//</p></div>
+                </div>
+    
+            <div class="chromaticButton sharpButton">
+                    <div class="button"><p class="chromaticButtonText">#</p></div>
+                </div>
+            </div>
+        </div>
+
+         <!--WAVES-->
+         <div class="container waveContainer">
+            <div class="share wave waveLo" data-file="Lo"></div>
+            <div class="share wave waveHi" data-file="Hi"></div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="content">
+
+            <svg class="container contentContainer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 719.99677 570.99658">
+
+                <!--PITCH-->
+                    <g class="pitchContainer">
+                        <path  class="pitchCircle a2Colour" d="M9434.3461 360.43822a24 24 0 1 0-24-24 23.99978 23.99978 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="pitchCircle a1Colour" d="M9434.3461 744.43822a24 24 0 1 0-24-24 23.99979 23.99979 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        
+                        <path d="M9434.3461 360.43822a24 24 0 1 0-24-24 23.99978 23.99978 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9434.3461 744.43822a24 24 0 1 0-24-24 23.99979 23.99979 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        
+                        <path  class="pitchCircle a2Pitch" d="M9434.3461 360.43822a24 24 0 1 0-24-24 23.99978 23.99978 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="pitchCircle a1Pitch" d="M9434.3461 744.43822a24 24 0 1 0-24-24 23.99979 23.99979 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        
+                        <text class="pitchNoteText" transform="translate(282.74321 100.27393)" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal"><tspan>A2</tspan></text>
+                        <text class="pitchHertzText" transform="translate(411.00493 97.44189)" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal"><tspan>440<tspan class="HzText">Hz</tspan></tspan></text>
+                        <text class="pitchNoteText" transform="translate(288.04693 485.38428)" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal"><tspan>A1</tspan></text>
+                        <text class="pitchHertzText" transform="translate(411.39702 481.39502)" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal"><tspan>220<tspan class="HzText">Hz</tspan></tspan></text>
+                    </g>
+            
+                <!--INTERVALS-->
+                <g class="intervalContainer">
+
+                    <g fill="#939aa3">
+                        <path d="M9098.34984 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9194.34935 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9290.349 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9386.34844 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9482.348 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9578.34758 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9674.3471 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path d="M9770.34661 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                    </g>
+
+                    <!--HALF-->
+                    <g class="intervalHalf intervalHalfCircles" fill="#f6ed45">
+                        <path class="halfCircle aHalfCircle" d="M9098.34984 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle aSharpHalfCircle" d="M9194.34935 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle bHalfCircle" d="M9290.349 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle cHalfCircle" d="M9386.34844 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle cSharpHalfCircle" d="M9482.348 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle dHalfCircle" d="M9578.34758 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle dSharpHalfCircle" d="M9674.3471 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="halfCircle eHalfCircle" d="M9770.34661 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                    </g>
+
+                    <g class="intervalHalf intervalHalfText" font-size="24" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal">
+                        <text class="halfText aHalfText" transform="translate(16.49981 211.58789)">A</text>
+                        <text class="halfText aSharpHalfText" transform="translate(105.82793 211.58789)">A#</text>
+                        <text class="halfText bHalfText" transform="translate(208.49981 211.58789)">B</text>
+                        <text class="halfText cHalfText" transform="translate(303.63604 211.58789)">C</text>
+                        <text class="halfText cSharpHalfText" transform="translate(392.96416 211.66016)">C#</text>
+                        <text class="halfText dHalfText" transform="translate(495.87578 211.66016)">D</text>
+                        <text class="halfText dSharpHalfText" transform="translate(585.20391 211.66016)">D#</text>
+                        <text class="halfText eHalfText" transform="translate(689.05156 211.66016)">E</text>
+                    </g> 
+
+                    <!--FULL-->
+                    <g class="intervalFull intervalFullCircles" fill="#f6ed45">
+                        <path class="fullCircle aFullCircle fullCircleAnime" d="M9098.34984 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle aSharpFullCircle" d="M9194.34935 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle bFullCircle fullCircleAnime" d="M9290.349 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle cFullCircle" d="M9386.34844 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle cSharpFullCircle fullCircleAnime" d="M9482.348 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle dFullCircle" d="M9578.34758 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle dSharpFullCircle fullCircleAnime" d="M9674.3471 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                        <path class="fullCircle eFullCircle" d="M9770.34661 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)"/>
+                    </g>
+                    
+                    <g class="intervalFull intervalFullText" font-size="24" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal">
+                        <text class="fullText aFullText" transform="translate(16.49981 211.58789)">A</text>
+                        <text class="fullText aSharpFullText" transform="translate(105.82793 211.58789)">A#</text>
+                        <text class="fullText bFullText" transform="translate(208.49981 211.58789)">B</text>
+                        <text class="fullText cFullText" transform="translate(303.63604 211.58789)">C</text>
+                        <text class="fullText cSharpFullText" transform="translate(392.96416 211.66016)">C#</text>
+                        <text class="fullText dFullText" transform="translate(495.87578 211.66016)">D</text>
+                        <text class="fullText dSharpFullText" transform="translate(585.20391 211.66016)">D#</text>
+                        <text class="fullText eFullText" transform="translate(689.05156 211.66016)">E</text>
+                    </g> 
+
+                    <!--OCT-->
+                    <g class="intervalOct intervalOctaveCircles">
+                        <path class="octCircle a1OctCircle octCircleAnime" d="M9098.34984 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="octCircle bOctCircle" d="M9194.34935 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ffaa5e"/>
+                        <path class="octCircle cOctCircle" d="M9290.349 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f97d9a"/>
+                        <path class="octCircle dOctCircle" d="M9386.34844 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>
+                        <path class="octCircle eOctCircle" d="M9482.348 552.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#6679ff"/>
+                        <path class="octCircle fOctCircle" d="M9578.34758 552.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#45abe0"/>
+                        <path class="octCircle gOctCircle" d="M9674.3471 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                        <path class="octCircle a2OctCircle octCircleAnime" d="M9770.34661 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                    </g>
+
+                    <g class="intervalOct intervalOctText" font-size="24" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal">
+                        <text class="octText a1OctText" transform="translate(16.5003 211.58789)">A</text>
+                        <text class="octText bOctText" transform="translate(112.52422 211.58789)">B</text>
+                        <text class="octText cOctText" transform="translate(207.65996 211.58789)">C</text>
+                        <text class="octText dOctText" transform="translate(303.92412 211.58789)">D</text>
+                        <text class="octText eOctText" transform="translate(401.12432 211.66016)">E</text>
+                        <text class="octText fOctText" transform="translate(497.31621 211.66016)">F</text>
+                        <text class="octText gOctText" transform="translate(591.18047 211.66016)">G</text>
+                        <text class="octText a2OctText" transform="translate(688.49981 211.66016)">A</text>
+                    </g>
+                </g>
+
+                <!--CHROMATIC-->
+                <g class="chromaticContainer">
+
+                    <!--INNER CIRCLE-->
+                    <path class="innerCircle" d="M9434.34825 576.43814a48 48 0 1 0-48-48 47.9996 47.9996 0 0 0 48 48" transform="translate(-9074.34984 -243.84189)" fill="#939aa3" class="Chromatic_Center_copy" data-name="Chromatic Center copy"/>
+
+                    <!--INNER TEXT-->
+                    <g class="inner" font-size="24" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal">
+                        <text class="innerText aInner naturalInner" transform="translate(352.49834 293.16309)">A</text>
+                        <text class="innerText aSharpInner sharpInner" transform="translate(345.82598 293.16309)">A#</text>
+                        <text class="innerText bFlatInner flatInner" transform="translate(345.82598 293.16309)">Bb</text>
+                        <text class="innerText bInner naturalInner" transform="translate(352.52227 293.16309)">B</text>
+                        <text class="innerText cInner naturalInner" transform="translate(351.65801 293.16309)">C</text>
+                        <text class="innerText cSharpInner sharpInner" transform="translate(345.01006 293.16309)">C#</text>
+                        <text class="innerText dFlatInner flatInner" transform="translate(345.01006 293.16309)">Db</text>
+                        <text class="innerText dInner naturalInner" transform="translate(351.92217 293.16309)">D</text>
+                        <text class="innerText dSharpInner sharpInner" transform="translate(345.2503 293.16309)">D#</text>
+                        <text class="innerText eFlatInner flatInner" transform="translate(345.2503 293.16309)">Eb</text>
+                        <text class="innerText eInner naturalInner" transform="translate(353.09795 293.16309)">E</text>
+                        <text class="innerText fInner naturalInner" transform="translate(353.29033 293.16309)">F</text>
+                        <text class="innerText fSharpInner sharpInner" transform="translate(346.64238 293.16309)">F#</text>
+                        <text class="innerText gFlatInner flatInner" transform="translate(346.64238 293.16309)">Gb</text>
+                        <text class="innerText gInner naturalInner" transform="translate(351.17803 293.16309)">G</text>
+                        <text class="innerText gSharpInner sharpInner" transform="translate(344.50615 293.16309)">G#</text>
+                        <text class="innerText aFlatInner flatInner" transform="translate(344.50615 293.16309)">Ab</text>
+                    </g>
+
+                    <g class="outer" font-size="24" fill="#fff" font-family="PPNeueMontreal-Book, PP Neue Montreal">
+                        <text class="outerText aOuter naturalOuter" transform="translate(352.49834 20.58008)">A</text>
+
+                        <text class="outerText aSharpOuter sharpOuter" transform="translate(486.0584 52.47607)"><tspan>A#</tspan></text>
+                        <text class="outerText bFlatOuter flatOuter" transform="translate(486.0584 52.47607)"><tspan>Bb</tspan></text>
+                        
+                        <text class="outerText bOuter naturalOuter" transform="translate(590.26641 157.9082)">B</text>
+                        <text class="outerText cOuter naturalOuter" transform="translate(623.21856 293.31592)">C</text>
+
+                        <text class="outerText cSharpOuter sharpOuter" transform="translate(583.45 435.7085)"><tspan>C#</tspan></text>
+                        <text class="outerText dFlatOuter flatOuter" transform="translate(583.45 435.7085)"><tspan>Db</tspan></text>
+
+                        <text class="outerText dOuter naturalOuter" transform="translate(494.24297 528.25244)">D</text>
+
+                        <text class="outerText dSharpOuter sharpOuter" transform="translate(345.41875 565.64404)"><tspan>D#</tspan></text>
+                        <text class="outerText eFlatOuter flatOuter" transform="translate(345.41875 565.64404)"><tspan>Eb</tspan></text>
+
+                        <text class="outerText eOuter naturalOuter" transform="translate(212.12237 528.82764)">E</text>
+                        <text class="outerText fOuter naturalOuter" transform="translate(119.48272 435.7085)">F</text>
+
+                        <text class="outerText fSharpOuter sharpOuter" transform="translate(69.49053 292.97998)"><tspan>F#</tspan></text>
+                        <text class="outerText gFlatOuter flatOuter" transform="translate(69.49053 292.97998)"><tspan>Gb</tspan></text>
+
+                        <text class="outerText gOuter naturalOuter" transform="translate(111.92266 157.9082)">G</text>
+                        
+                        <text class="outerText gSharpOuter sharpOuter" transform="translate(209.3626 51.8999)"><tspan>G#</tspan></text>
+                        <text class="outerText aFlatOuter flatOuter" transform="translate(209.3626 51.8999)"><tspan>Ab</tspan></text>
+                    </g>
+
+                    <!--GREY CIRCLES-->
+                    <g class="circles greyCircles">
+                        <path class="aGrey" d="M9434.34825 360.43827a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                    
+                        <g class="aSharpGrey">
+                            <path d="M9530.34777 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                            <path d="M9530.34777 384.438a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        </g>
+                    
+                        <path class="bGrey" d="M9602.34746 456.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        <path class="cGrey" d="M9626.34734 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                    
+                        <g class="cSharpGrey">
+                            <path d="M9602.34734 648.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                            <path d="M9602.34746 600.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>    
+                        </g>
+                    
+                        <path class="dGrey" d="M9530.34789 720.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        
+                        <g class="dSharpGrey">
+                            <path d="M9434.34825 744.43805a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                            <path d="M9434.34825 696.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        </g>
+                    
+                        <path class="eGrey" d="M9338.34868 720.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        <path class="fGrey" d="M9266.34905 648.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                    
+                        <g class="fSharpGrey">
+                            <path d="M9242.34929 552.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                            <path d="M9242.34929 504.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        </g>
+                    
+                        <path class="gGrey" d="M9266.34905 456.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                    
+                        <g class="gSharpGrey">
+                            <path d="M9338.34874 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                            <path d="M9338.34874 384.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ebebeb"/>
+                        </g>
+                    </g>
+
+                    <!--BG CIRCLES-->
+                    <g class="circles bgCircles">
+                        <path d="M9338.34874 384.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9338.34874 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9266.34905 456.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9242.34929 504.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9242.34929 552.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9266.34905 648.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9338.34868 720.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9434.34825 696.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9434.34825 744.43805a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9530.34789 720.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9602.34734 648.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9602.34746 600.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9626.34734 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9602.34746 456.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9530.34777 384.438a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9530.34777 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                        <path d="M9434.34825 360.43827a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#939aa3"/>
+                    </g>
+
+                    <!--TOUCH CIRCLES-->
+                    <g class="circles touchCircles">
+                        <path class="aTouch" d="M9434.34825 360.43827a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        
+                        <path class="aSharpTouch aComboTouch" d="M9530.34777 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="bFlatTouch aComboTouch" d="M9530.34777 384.438a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ffaa5e"/>
+                      
+                        <path class="bTouch" d="M9602.34746 456.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ffaa5e"/>
+                        <path class="cTouch" d="M9626.34734 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f97d9a"/>
+                        
+                        <path class="cSharpTouch cComboTouch" d="M9602.34734 648.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#f97d9a"/>
+                        <path class="dFlatTouch cComboTouch" d="M9602.34746 600.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>    
+                        
+                        <path class="dTouch" d="M9530.34789 720.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>
+                        
+                        <path class="dSharpTouch dComboTouch" d="M9434.34825 744.43805a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>
+                        <path class="eFlatTouch dComboTouch" d="M9434.34825 696.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#6679ff"/>
+                        
+                        <path class="eTouch" d="M9338.34868 720.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#6679ff"/>
+                        <path class="fTouch" d="M9266.34905 648.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#45abe0"/>      
+                        
+                        <path class="fSharpTouch fComboTouch" d="M9242.34929 552.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#45abe0"/>
+                        <path class="gFlatTouch fComboTouch" d="M9242.34929 504.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                      
+                        <path class="gTouch" d="M9266.34905 456.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                      
+                        <path class="gSharpTouch gComboTouch" d="M9338.34874 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                        <path class="aFlatTouch gComboTouch" d="M9338.34874 384.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                      </g>
+
+                    <!--COLOUR CIRCLES-->
+                    <g class="circles colourCircles">
+                        <path class="aFlash" d="M9434.34825 360.43827a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="aColour" d="M9434.34825 360.43827a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        
+                        <path class="aSharpColour aComboColour" d="M9530.34777 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                        <path class="bFlatColour aComboColour" d="M9530.34777 384.438a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#ffaa5e"/>
+                    
+                        <path class="bColour" d="M9602.34746 456.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#ffaa5e"/>
+                        <path class="cColour" d="M9626.34734 552.43814a24 24 0 1 0-24-24 23.99986 23.99986 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#f97d9a"/>
+                        
+                        <path class="cSharpColour cComboColour" d="M9602.34734 648.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#f97d9a"/>
+                        <path class="dFlatColour cComboColour" d="M9602.34746 600.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>    
+                        
+                        <path class="dColour" d="M9530.34789 720.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>
+                        
+                        <path class="dSharpColour dComboColour" d="M9434.34825 744.43805a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#b85eb6"/>
+                        <path class="eFlatColour dComboColour" d="M9434.34825 696.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#6679ff"/>
+                        
+                        <path class="eColour" d="M9338.34868 720.43814a24 24 0 1 0-24-24 23.99981 23.99981 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#6679ff"/>
+                        <path class="fColour" d="M9266.34905 648.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#45abe0"/>      
+                        
+                        <path class="fSharpColour fComboColour" d="M9242.34929 552.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#45abe0"/>
+                        <path class="gFlatColour fComboColour" d="M9242.34929 504.43814a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                    
+                        <path class="gColour" d="M9266.34905 456.43814a24 24 0 1 0-24-24 23.99982 23.99982 0 0 0 24 24" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                    
+                        <path class="gSharpColour gComboColour" d="M9338.34874 336.43827a24 24 0 0 0 0 48Z" transform="translate(-9074.34984 -243.84189)" fill="#10c79c"/>
+                        <path class="aFlatColour gComboColour" d="M9338.34874 384.43814a24 24 0 0 0 0-48Z" transform="translate(-9074.34984 -243.84189)" fill="#f6ed45"/>
+                    </g>
+                </g>
+              </svg>     
+        </div> <!--CONTENT-->
+
+    </main>
+
+    <script src="/content/chromatic/chromatic combination/js/lottie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="/content/chromatic/chromatic combination/js/chroma.js"></script>
+</body>
+</html>

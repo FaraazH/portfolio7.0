@@ -1,0 +1,1099 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: none;
+  background-color: #C0C7CC;
+}
+
+@font-face {
+  font-family: 'Kobe';
+  src: url("/fonts/Kobe1.1-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Certeau';
+  src: url("/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Book.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url("/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noColour {
+  opacity: 0%;
+}
+
+.disappear {
+  visibility: hidden;
+}
+
+.yellowFill {
+  background-color: #f6ed45;
+}
+
+text {
+  font-family: PPNeueMontreal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 95%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 3fr 1fr;
+  grid-template-areas: 'text text nav' 'content content content' 'buttons buttons buttons';
+  position: relative;
+}
+
+.titleContainer {
+  grid-area: text;
+  position: relative;
+}
+
+.titleContainer .title {
+  position: absolute;
+}
+
+.titleContainer h1 {
+  font-size: 1.8rem;
+  font-family: Certeau;
+  letter-spacing: -.1rem;
+  color: white;
+}
+
+.descriptionContainer {
+  grid-area: text;
+  position: relative;
+}
+
+.descriptionContainer .description {
+  position: absolute;
+  top: 3em;
+}
+
+.descriptionContainer .frequencyDescription {
+  position: relative;
+}
+
+.descriptionContainer .frequencyDescription .hiLoDescription {
+  position: absolute;
+}
+
+.descriptionContainer .stepDescription {
+  position: relative;
+}
+
+.descriptionContainer .stepDescription .hfoDescription {
+  position: absolute;
+}
+
+.descriptionContainer .ascendDescription {
+  position: relative;
+}
+
+.descriptionContainer .ascendDescription .shareDescription {
+  position: absolute;
+}
+
+.descriptionContainer p {
+  font-size: .85rem;
+  font-family: PPNeueMontreal;
+  font-weight: 300;
+  line-height: .95rem;
+  padding-bottom: .5rem;
+  color: white;
+  letter-spacing: .01rem;
+}
+
+.descriptionContainer .bold {
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+nav .navContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav .navButton {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navButton .navCircle {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #939aa3;
+  border-radius: 50%;
+}
+
+nav .navButton .navCircle:hover {
+  cursor: pointer;
+}
+
+nav .navButton p {
+  font-size: .65rem;
+  letter-spacing: 0.05rem;
+  margin-top: .45em;
+  color: #939aa3;
+  font-family: PPNeueMontreal;
+  font-weight: 500;
+}
+
+nav .navColourContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav .navColourContainer .navColourButton {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navColourContainer .navColourButton .navColourCircle {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #f6ed45;
+  border-radius: 50%;
+}
+
+nav .navColourContainer .navColourButton p {
+  font-size: .65rem;
+  letter-spacing: 0.05rem;
+  margin-top: .45em;
+  color: white;
+  font-family: PPNeueMontreal;
+  font-weight: 500;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.intervalContainer text {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.pitchContainer .pitchCircle:hover {
+  cursor: pointer;
+}
+
+.pitchContainer .pitchHertzText {
+  font-family: PPNeueMontreal;
+  letter-spacing: .05rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.pitchContainer .pitchHertzText .HzText {
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: .08rem;
+}
+
+.pitchContainer .pitchNoteText {
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+}
+
+.waveContainer {
+  grid-area: content;
+  position: relative;
+  top: 2px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.waveContainer .wave {
+  position: absolute;
+}
+
+.buttonsContainer {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.buttonsContainer .intervalButtons {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.buttonsContainer .intervalButtons .intervalButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3.2em;
+}
+
+.buttonsContainer .intervalButtons .intervalButton p {
+  font-family: 'PPNeueMontreal';
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.buttonsContainer .intervalButtons .intervalButton .intervalButtonText {
+  color: white;
+  font-weight: 400;
+}
+
+.buttonsContainer .intervalButtons .button {
+  width: 2em;
+  height: 2em;
+  background-color: #939aa3;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer .intervalButtons .button:hover {
+  cursor: pointer;
+}
+
+.buttonsContainer .intervalColourButtons {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.buttonsContainer .intervalColourButtons .intervalColourButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3.2em;
+}
+
+.buttonsContainer .intervalColourButtons .intervalColourButton p {
+  font-family: 'PPNeueMontreal';
+  font-size: .75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.buttonsContainer .intervalColourButtons .colourButton {
+  width: 2em;
+  height: 2em;
+  background-color: #f6ed45;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer .intervalColourButtons .colourButton .intervalColourButtonText {
+  color: #939aa3;
+  font-weight: 400;
+}
+
+.buttonsContainer .chromaticButtons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.buttonsContainer .chromaticButtons .chromaticButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3.2em;
+}
+
+.buttonsContainer .chromaticButtons .chromaticButton .button:hover {
+  cursor: pointer;
+}
+
+.buttonsContainer .chromaticButtons .button {
+  width: 2em;
+  height: 2em;
+  background-color: #939aa3;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer .chromaticButtons .button .chromaticButtonText {
+  font-family: PPNeueMontreal;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.buttonsContainer .chromaticButtonColourText {
+  font-family: PPNeueMontreal;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  color: #939aa3;
+}
+
+.buttonsContainer .chromaticButtonsColour {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.buttonsContainer .chromaticButtonColour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3.2em;
+}
+
+.buttonsContainer .buttonColour {
+  width: 2em;
+  height: 2em;
+  background-color: #f6ed45;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chromaticContainer .outerText {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+.chromaticContainer .circles:hover {
+  cursor: pointer;
+}
+
+.intervalContainer text {
+  font-weight: 400;
+}
+
+@media (min-width: 500px) {
+  main {
+    height: 95%;
+    width: 90%;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+  .contentContainer {
+    max-width: 35em;
+  }
+  .intervalButtons, .intervalColourButtons, .chromaticButtons, .chromaticButtonsColour {
+    max-width: 22em;
+  }
+  .titleContainer {
+    grid-area: text;
+    position: relative;
+  }
+  .titleContainer .title {
+    position: absolute;
+  }
+  .titleContainer h1 {
+    font-size: 2rem;
+    font-family: Certeau;
+    letter-spacing: .05rem;
+    color: white;
+  }
+  .introDescriptionText {
+    font-weight: 300;
+  }
+  .introSilentText {
+    opacity: 0;
+  }
+  .descriptionContainer .description {
+    position: absolute;
+    top: 3.5em;
+  }
+  .descriptionContainer p {
+    font-size: .95rem;
+    font-weight: 200;
+    line-height: 1rem;
+    letter-spacing: .05rem;
+    padding-bottom: .5rem;
+    color: white;
+  }
+  .descriptionContainer .bold {
+    font-weight: 500;
+    letter-spacing: .04rem;
+  }
+  nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  nav .navContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  nav .navButton {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .navButton .navCircle {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #939aa3;
+    border-radius: 50%;
+  }
+  nav .navButton p {
+    font-size: .7rem;
+    letter-spacing: 0.05rem;
+    margin-top: .5em;
+    color: #939aa3;
+    font-family: PPNeueMontreal;
+    font-weight: 400;
+  }
+  nav .navColourContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  nav .navColourContainer .navColourButton {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .navColourContainer .navColourButton .navColourCircle {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #f6ed45;
+    border-radius: 50%;
+  }
+  nav .navColourContainer .navColourButton p {
+    font-size: .7rem;
+    letter-spacing: 0.05rem;
+    margin-top: .5em;
+    color: white;
+    font-family: PPNeueMontreal;
+    font-weight: 400;
+  }
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentContainer {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .pitchContainer .pitchHertzText {
+    font-family: PPNeueMontreal;
+    letter-spacing: .04rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .pitchContainer .pitchHertzText .HzText {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+  }
+  .pitchContainer .pitchNoteText {
+    font-size: 1.6rem;
+    letter-spacing: .05rem;
+    font-weight: 400;
+  }
+  .waveContainer {
+    grid-area: content;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .waveContainer .wave {
+    position: absolute;
+  }
+  .buttonsContainer {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  .buttonsContainer .intervalButtons {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .intervalButtons .intervalButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .intervalButtons .intervalButton p {
+    font-family: 'PPNeueMontreal';
+    font-size: .85rem;
+    font-weight: 500;
+  }
+  .buttonsContainer .intervalButtons .intervalButton .intervalButtonText {
+    color: white;
+    font-weight: 400;
+  }
+  .buttonsContainer .intervalButtons .button {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #939aa3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .intervalColourButtons {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .intervalColourButtons .intervalColourButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .intervalColourButtons .intervalColourButton p {
+    font-family: 'PPNeueMontreal';
+    font-size: .85rem;
+    font-weight: 500;
+    color: white;
+  }
+  .buttonsContainer .intervalColourButtons .colourButton {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #f6ed45;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .intervalColourButtons .colourButton .intervalColourButtonText {
+    color: #939aa3;
+    font-weight: 400;
+  }
+  .buttonsContainer .chromaticButtons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .chromaticButtons .chromaticButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .chromaticButtons .button {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #939aa3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .chromaticButtons .button .chromaticButtonText {
+    font-family: PPNeueMontreal;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    color: white;
+  }
+  .buttonsContainer .chromaticButtonColourText {
+    font-family: PPNeueMontreal;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    color: #939aa3;
+  }
+  .buttonsContainer .chromaticButtonsColour {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .chromaticButtonColour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .buttonColour {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #f6ed45;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intervalContainer text {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .chromaticContainer .outerText {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    height: 92%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1.5fr;
+    grid-template-areas: 'title . text' 'nav content .' '. buttons .';
+  }
+  .titleContainer {
+    grid-area: title;
+  }
+  .titleContainer h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.05rem;
+  }
+  nav {
+    grid-area: nav;
+  }
+  nav .navContainer, nav .navColourContainer {
+    height: 56%;
+    align-items: flex-start;
+    margin-top: 1em;
+  }
+  nav .navButton {
+    width: 3.2em;
+    height: 3.2em;
+  }
+  nav .navButton .navCircle {
+    width: 1.8em;
+    height: 1.8em;
+  }
+  nav .navButton p {
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .06rem;
+    margin-top: .5em;
+  }
+  nav .navColourContainer .navColourButton {
+    width: 3.2em;
+    height: 3.2em;
+  }
+  nav .navColourContainer .navColourButton .navColourCircle {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: #f6ed45;
+  }
+  nav .navColourContainer .navColourButton p {
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .06rem;
+    margin-top: .5em;
+    color: white;
+  }
+  .descriptionContainer {
+    grid-area: text;
+  }
+  .descriptionContainer .description {
+    text-align: right;
+    top: 0;
+    right: 0;
+  }
+  .descriptionContainer .frequencyDescription {
+    position: relative;
+  }
+  .descriptionContainer .frequencyDescription .hiLoDescription {
+    position: absolute;
+    right: 0;
+  }
+  .descriptionContainer .stepDescription {
+    position: relative;
+    right: 0;
+  }
+  .descriptionContainer .stepDescription .hfoDescription {
+    position: absolute;
+    right: 0;
+  }
+  .descriptionContainer .ascendDescription {
+    position: relative;
+    right: 0;
+  }
+  .descriptionContainer .ascendDescription .shareDescription {
+    position: absolute;
+    right: 0;
+  }
+  .descriptionContainer p {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    font-weight: 200;
+    padding-bottom: .5rem;
+    letter-spacing: .04rem;
+    color: white;
+  }
+  .descriptionContainer .bold {
+    font-weight: 500;
+    letter-spacing: .06rem;
+  }
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentContainer {
+    width: 100%;
+    max-width: 39em;
+    position: relative;
+    z-index: 2;
+  }
+  .pitchContainer .pitchHertzText {
+    font-family: PPNeueMontreal;
+    letter-spacing: .05rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .pitchContainer .pitchHertzText .HzText {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: .04rem;
+  }
+  .pitchContainer .pitchNoteText {
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    font-weight: 400;
+  }
+  .waveContainer {
+    grid-area: content;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .waveContainer .wave {
+    position: absolute;
+  }
+  .intervalButtons, .intervalColourButtons, .chromaticButtons, .chromaticButtonsColour {
+    max-width: 24em;
+  }
+  .buttonsContainer {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  .buttonsContainer .intervalButtons {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .intervalButtons .intervalButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .intervalButtons .intervalButton p {
+    font-family: 'PPNeueMontreal';
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .buttonsContainer .intervalButtons .intervalButton .intervalButtonText {
+    color: white;
+    font-weight: 200;
+  }
+  .buttonsContainer .intervalButtons .button {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #939aa3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .intervalColourButtons {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .intervalColourButtons .intervalColourButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .intervalColourButtons .intervalColourButton p {
+    font-family: 'PPNeueMontreal';
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+  }
+  .buttonsContainer .intervalColourButtons .colourButton {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #f6ed45;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .intervalColourButtons .colourButton .intervalColourButtonText {
+    color: #939aa3;
+    font-weight: 400;
+  }
+  .buttonsContainer .chromaticButtons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .chromaticButtons .chromaticButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .chromaticButtons .button {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #939aa3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonsContainer .chromaticButtons .button .chromaticButtonText {
+    font-family: PPNeueMontreal;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    color: white;
+  }
+  .buttonsContainer .chromaticButtonColourText {
+    font-family: PPNeueMontreal;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    color: #939aa3;
+  }
+  .buttonsContainer .chromaticButtonsColour {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .buttonsContainer .chromaticButtonColour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+  }
+  .buttonsContainer .buttonColour {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #f6ed45;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intervalContainer text {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .chromaticContainer .outerText {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+  }
+}
+/*# sourceMappingURL=chromatic.css.map */

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'Kobe';
+  src: url("/fonts/Kobe1.1-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Certeau';
+  src: url("/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+
+h1, p {
+  font-family: 'Certeau';
+}
+
+.chromatic {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'graphic' 'text';
+}
+
+.chromaticGraphic {
+  grid-area: graphic;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'notes';
+}
+
+.chromaticGraphic .notes {
+  position: relative;
+  grid-area: notes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.chromaticGraphic .notes p {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #EDEDED;
+}
+
+.chromaticGraphic .circleContainer {
+  grid-area: notes;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.chromaticGraphic .circleContainer .circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.chromaticGraphic .circleContainer .colourCircles {
+  position: absolute;
+  z-index: 3;
+}
+
+.chromaticGraphic .circleContainer .greyCircles {
+  position: absolute;
+  z-index: 2;
+}
+
+.chromaticGraphic .circleContainer .bgCircles {
+  position: absolute;
+  z-index: 1;
+}
+
+.chromaticGraphic .types {
+  grid-area: types;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.chromaticGraphic .types p {
+  margin-left: 1em;
+  color: #131C1A;
+}
+
+.chromaticGraphic .disappear {
+  opacity: 0;
+}
+
+.chromaticGraphic .mute {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chromaticGraphic .unmute {
+  opacity: 100%;
+  transition: .8s;
+}
+/*# sourceMappingURL=interaction.css.map */
