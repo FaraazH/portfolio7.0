@@ -170,7 +170,16 @@ main {
   grid-area: standing;
   justify-content: flex-start;
   padding-left: 1em;
-  font-size: .9rem;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.container .innerContainer .ideasText {
+  grid-area: ideas;
+  justify-content: flex-end;
+  padding-right: 1em;
+  font-size: .8rem;
+  font-weight: 400;
 }
 
 .container .innerContainer .animationText {
@@ -186,19 +195,12 @@ main {
   height: 3em;
 }
 
-.container .innerContainer .ideasText {
-  grid-area: ideas;
-  justify-content: flex-end;
-  padding-right: 1em;
-  font-size: .9rem;
-}
-
 .container .innerContainer .emailText {
   grid-area: animation;
   background-color: #008f74;
   color: white;
-  letter-spacing: .36rem;
-  font-size: .8rem;
+  letter-spacing: .3rem;
+  font-size: .75rem;
   font-weight: 500;
 }
 
@@ -236,6 +238,17 @@ main {
   }
   .container .innerContainer .standingText {
     grid-area: standing;
+    padding-left: 1em;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+  .container .innerContainer .ideasText {
+    grid-area: ideas;
+    padding-right: 1em;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
   }
   .container .innerContainer .animationText {
     grid-area: animation;
@@ -243,15 +256,7 @@ main {
     color: white;
   }
   .container .innerContainer .animationText .animation {
-    height: 3.2em;
-  }
-  .container .innerContainer .ideasText {
-    grid-area: ideas;
-  }
-  .container .innerContainer .emailText {
-    grid-area: animation;
-    background-color: #008f74;
-    color: white;
+    height: 3.3em;
   }
   .container .innerContainer .line1 {
     grid-area: line1;

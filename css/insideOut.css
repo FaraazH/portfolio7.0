@@ -160,6 +160,7 @@ main {
 
 .innerContainer .title h1 {
   font-size: 1.5rem;
+  letter-spacing: 0.05rem;
   color: white;
 }
 
@@ -174,6 +175,7 @@ main {
 
 .innerContainer .description p {
   font-size: .8rem;
+  letter-spacing: 0.02rem;
   color: #008f74;
 }
 
@@ -221,7 +223,9 @@ main {
 }
 
 .insideOutContainer .tools p {
-  font-size: .65rem;
+  font-size: .6rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
   text-align: right;
   color: #008f74;
 }
@@ -276,6 +280,8 @@ main {
     color: white;
     width: 95%;
     padding-left: .3em;
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
   }
   .innerContainer .description {
     grid-area: description;
@@ -286,7 +292,8 @@ main {
     border-bottom: .15em solid #008f74;
   }
   .innerContainer .description p {
-    font-size: .8rem;
+    font-size: .85rem;
+    letter-spacing: 0.04rem;
     color: #008f74;
     padding-left: 1em;
   }
@@ -347,6 +354,8 @@ main {
   }
   .insideOutContainer .innerContainer .tools p {
     font-size: .65rem;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
     text-align: right;
     color: #008f74;
   }

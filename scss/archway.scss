@@ -166,6 +166,7 @@ main {
 
         h1 {
             font-size: 1.5rem;
+            letter-spacing: .05rem;
             color: white;
         }
     }
@@ -180,6 +181,8 @@ main {
 
         p {
             font-size: .8rem;
+            line-height: 1rem;
+            letter-spacing: 0.02rem;
             color:#008f74;
         }
     }
@@ -196,13 +199,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        p {
-            text-align: right;
-            font-size: .7rem;
-            color:#008f74;
-            padding-right: 1em;
-        }
     }
 }
 
@@ -238,7 +234,9 @@ main {
         padding: 1em;
 
         p {
-            font-size: .65rem;
+            font-size: .6rem;
+            font-weight: 400;
+            letter-spacing: 0.05rem;
             text-align: right;
             color:#008f74;
         }
@@ -255,7 +253,7 @@ main {
        align-items: center;
 
         img {
-            width: 90%;
+            width: 80%;
         }
     }
 }
@@ -263,9 +261,14 @@ main {
 .narrativeContainer {
 
     .graphic {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         img {
-            width: 100%;
+            width: 80%;
         }
     }
 }
@@ -340,6 +343,8 @@ main {
                 color: white;
                 width: 95%;
                 padding-left: .3em;
+                font-size: 1.6rem;
+                letter-spacing: 0.08rem;
             }
         }
     
@@ -352,7 +357,8 @@ main {
             border-bottom: .15em solid #008f74;
     
             p {
-                font-size: .8rem;
+                font-size: .85rem;
+                letter-spacing: 0.04rem;
                 color:#008f74;
                 padding-left: 1em;
             }
@@ -433,6 +439,8 @@ main {
         
                 p {
                     font-size: .65rem;
+                    letter-spacing: 0.06rem;
+                    font-weight: 400;
                     text-align: right;
                     color:#008f74;
                 }
@@ -445,7 +453,7 @@ main {
         .innerContainer {
 
             .graphic {
-                max-width: 35em;
+                max-width: 45em;
             }
         }
     }

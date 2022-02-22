@@ -174,7 +174,16 @@ main {
             grid-area: standing;
             justify-content: flex-start;
             padding-left: 1em;
-            font-size: .9rem;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+
+        .ideasText {
+            grid-area: ideas;
+            justify-content: flex-end;
+            padding-right: 1em;
+            font-size: .8rem;
+            font-weight: 400;
         }
 
         .animationText {
@@ -190,19 +199,12 @@ main {
             }
         }
 
-        .ideasText {
-            grid-area: ideas;
-            justify-content: flex-end;
-            padding-right: 1em;
-            font-size: .9rem;
-        }
-
         .emailText {
             grid-area: animation;
             background-color: #008f74;
             color: white;
-            letter-spacing: .36rem;
-            font-size: .8rem;
+            letter-spacing: .3rem;
+            font-size: .75rem;
             font-weight: 500;
         }
     }
@@ -247,6 +249,18 @@ main {
     
             .standingText {
                 grid-area: standing;
+                padding-left: 1em;
+                font-size: .9rem;
+                font-weight: 400;
+                letter-spacing: 0.1em;
+            }
+    
+            .ideasText {
+                grid-area: ideas;
+                padding-right: 1em;
+                font-size: .9rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
             }
     
             .animationText {
@@ -255,21 +269,10 @@ main {
                 color: white;
 
                 .animation {
-                    // width: 50%;
-                    height: 3.2em;
+                    height: 3.3em;
                 }
             }
     
-            .ideasText {
-                grid-area: ideas;
-            }
-    
-            .emailText {
-                grid-area: animation;
-                background-color: #008f74;
-                color: white;
-            }
-
             .line1 {
                 grid-area: line1;
                 border-left: #008f74 solid .15em;

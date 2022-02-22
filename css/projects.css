@@ -168,7 +168,7 @@ main {
 
 .container .text h1 {
   font-size: 1rem;
-  letter-spacing: .5rem;
+  letter-spacing: .2rem;
   color: #008f74;
 }
 
@@ -177,7 +177,7 @@ main {
   margin-top: .4em;
   color: #008f74;
   font-weight: 400;
-  letter-spacing: .16rem;
+  letter-spacing: .12rem;
 }
 
 .inMindContainer {
@@ -277,6 +277,7 @@ main {
     color: #008f74;
   }
   .container .text p {
+    font-size: .75rem;
     margin-top: .4em;
     color: #008f74;
     font-weight: 300;
