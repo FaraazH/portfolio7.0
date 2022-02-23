@@ -170,7 +170,7 @@ main {
   grid-area: standing;
   justify-content: flex-start;
   padding-left: 1em;
-  font-size: .8rem;
+  font-size: .85rem;
   font-weight: 400;
 }
 
@@ -178,7 +178,7 @@ main {
   grid-area: ideas;
   justify-content: flex-end;
   padding-right: 1em;
-  font-size: .8rem;
+  font-size: .85rem;
   font-weight: 400;
 }
 

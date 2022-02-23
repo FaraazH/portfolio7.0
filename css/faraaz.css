@@ -146,8 +146,8 @@ main {
 .container .graphic {
   grid-area: graphic;
   align-self: center;
-  width: 25%;
-  max-width: 10em;
+  width: 28%;
+  max-width: 9em;
 }
 
 .container .text {
@@ -202,7 +202,6 @@ main {
     grid-area: graphic;
     align-self: center;
     justify-self: center;
-    width: 50%;
   }
   .container .text {
     grid-area: text;
