@@ -65,7 +65,7 @@ h1, p {
 
         p {
         position: absolute;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #EDEDED;
         }
     }
@@ -126,4 +126,18 @@ h1, p {
         opacity: 100%;
         transition: .8s;
     }
+}
+
+@media (min-width:500px){
+
+    .chromaticGraphic {
+
+        .notes {
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
 }
