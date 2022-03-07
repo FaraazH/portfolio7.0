@@ -148,8 +148,7 @@ main {
     .graphic {
         grid-area: graphic;
         align-self: center;
-        width: 28%;
-        max-width: 6.5em;
+        max-width: 7.5em;
     }
 
     .text {
@@ -176,12 +175,26 @@ main {
     }
 }
 
+
 @media (min-width: 500px) {
 
     .container {
 
         .graphic {
-            max-width: 7em;
+            max-width: 8.5em;
+
+            cursor: pointer;
+
+            .colour:hover {
+    
+                .colourBG {
+                    fill: #008F74;
+                }
+     
+                .colourLetter {
+                    fill: white;
+                }
+            }
         }
     }
 }
@@ -218,7 +231,7 @@ main {
             grid-area: graphic;
             align-self: center;
             justify-self: center;
-            max-width: 8em;
+            max-width: 9.5em;
 
         }
     
