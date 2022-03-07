@@ -76,7 +76,7 @@ h1 {
 }
 
 text {
-    font-family: 'Certeau';
+    font-family: 'PPNeueMontreal';
 }
 
 p {
@@ -149,7 +149,7 @@ main {
         grid-area: graphic;
         align-self: center;
         width: 28%;
-        max-width: 9em;
+        max-width: 5.2em;
     }
 
     .text {
@@ -172,6 +172,16 @@ main {
             color: #008f74;
             font-weight: 400;
             letter-spacing: .16rem;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+
+    .container {
+
+        .graphic {
+            max-width: 5.5em;
         }
     }
 }
@@ -208,7 +218,8 @@ main {
             grid-area: graphic;
             align-self: center;
             justify-self: center;
-            // width: 50%;
+            max-width: 6.5em;
+
         }
     
         .text {
