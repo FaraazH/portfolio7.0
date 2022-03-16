@@ -180,7 +180,7 @@ main {
   letter-spacing: .12rem;
 }
 
-.paintingTreesContainer {
+.mgContainer {
   margin-bottom: 4em;
 }
 
@@ -199,6 +199,9 @@ main {
     fill: #008f74;
   }
   .paintingTreesInnerContainer:hover .paintingTreesGraphic path, .paintingTreesInnerContainer:hover rect {
+    fill: #008f74;
+  }
+  .mgInnerContainer:hover .mgGraphic text {
     fill: #008f74;
   }
 }
@@ -283,10 +286,10 @@ main {
     font-weight: 300;
     letter-spacing: .12rem;
   }
-  .paintingTreesContainer {
+  .mgContainer {
     margin-bottom: 0em;
   }
-  .paintingTreesContainer .paintingTreesInnerContainer {
+  .mgContainer .mgInnerContainer {
     border-right: 0em;
   }
 }

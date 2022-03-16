@@ -183,7 +183,7 @@ main {
     }
 }
 
-.paintingTreesContainer {
+.mgContainer {
     margin-bottom: 4em;
 }
 
@@ -225,6 +225,14 @@ main {
     .paintingTreesInnerContainer:hover {
 
         .paintingTreesGraphic path, rect {
+
+            fill: #008f74;
+        }
+    }
+
+    .mgInnerContainer:hover {
+
+        .mgGraphic text {
 
             fill: #008f74;
         }
@@ -327,10 +335,19 @@ main {
         }
     }
     
-    .paintingTreesContainer {
+    // .paintingTreesContainer {
+    //     margin-bottom: 0em;
+
+    //     .paintingTreesInnerContainer {
+    //         border-right: 0em;
+    //     }
+    // }
+
+
+    .mgContainer {
         margin-bottom: 0em;
 
-        .paintingTreesInnerContainer {
+        .mgInnerContainer {
             border-right: 0em;
         }
     }

@@ -214,7 +214,7 @@ main {
     grid-area: graphic;
     align-self: center;
     justify-self: center;
-    max-width: 9.5em;
+    max-width: 10em;
   }
   .container .text {
     grid-area: text;
