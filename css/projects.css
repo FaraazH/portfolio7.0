@@ -286,9 +286,6 @@ main {
     font-weight: 300;
     letter-spacing: .12rem;
   }
-  .mgContainer {
-    margin-bottom: 0em;
-  }
   .mgContainer .mgInnerContainer {
     border-right: 0em;
   }
